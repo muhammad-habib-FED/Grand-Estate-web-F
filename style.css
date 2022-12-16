@@ -186,8 +186,7 @@ p {
 /* ========================================
                   Hero Page 
 =========================================== */
-#swiper {
-}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -221,7 +220,7 @@ p {
 }
 
 #swiper-pagination {
-  left: 90.7%;
+  left: 90%;
   bottom: 30%;
 }
 
@@ -255,7 +254,7 @@ p {
 
 .price {
   color: #fff;
-  padding-bottom: 10px;
+  padding: 4px;
 }
 
 .price strong {
@@ -288,8 +287,9 @@ p {
     0px 0px 0.1px 0px rgba(0, 0, 0, 0.25);
 }
 
-.foam-section {
-  padding: auto 15px;
+#foam-section .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .container {
@@ -297,12 +297,12 @@ p {
   margin-right: auto;
   /* padding-left: 15px;
   padding-right: 15px; */
-  max-width: 1140px;
+  max-width: 1160px;
 }
 
 .foam-box {
   background-color: #fff;
-  padding: 30px;
+  padding: 20px 20px 10px 35px;
   margin-top: -120px;
   position: relative;
   z-index: 1;
@@ -317,6 +317,7 @@ p {
 .first-line {
   display: flex;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .pro-box {
@@ -327,7 +328,7 @@ p {
 }
 
 select {
-  width: 255px;
+  width: 250px;
   padding: 15px 8px;
 }
 
@@ -339,7 +340,7 @@ select {
 
 .pro-box input {
   padding: 15px 8px;
-  width: 255px;
+  width: 250px;
 }
 
 .price-input {
@@ -348,6 +349,7 @@ select {
 
 .price-range-display {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .price-range {
@@ -364,13 +366,13 @@ select {
 }
 
 .input-min {
-  max-width: 150px;
+  max-width: 140px;
   width: 100%;
   padding: 15px 8px;
 }
 
 .input-max {
-  max-width: 150px;
+  max-width: 140px;
   width: 100%;
   padding: 15px 8px;
 }
@@ -572,9 +574,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .cards-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 40px;
   width: 100%;
 }
@@ -591,8 +594,8 @@ input[type="range"]::-moz-range-thumb {
 
 .price-tag {
   position: absolute;
-  top: 78%;
   right: 0;
+  bottom: 5%;
   background-color: #eb3751;
   padding: 5px 10px;
   color: #fff;
@@ -777,7 +780,7 @@ input[type="range"]::-moz-range-thumb {
 .name-carector {
   position: absolute;
   left: 7%;
-  top: 80%;
+  bottom: 5%;
   text-align: start;
   line-height: 1.6;
 }
@@ -811,7 +814,7 @@ input[type="range"]::-moz-range-thumb {
 .testimonial::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 70px;
   height: 2px;
   /* margin-inline: auto; */
   margin-block-start: 10px;
@@ -884,6 +887,22 @@ input[type="range"]::-moz-range-thumb {
 /* ===============================================================
                       Meqia Query Section 
 ================================================================== */
+
+@media (max-width: 2560px) {
+  body {
+    width: 100%;
+  }
+
+  .user-id-name .swiper-slide {
+    background-color: #cecece;
+  }
+}
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
@@ -911,13 +930,24 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.8s;
     z-index: 2;
     height: 100px;
   }
 
   .hamburger-navbar.active {
     left: 0;
+  }
+
+  .nav-items-ul {
+    width: 100%;
+    /* padding-top: 40px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
   }
 
   /* Secondry Header */
@@ -948,7 +978,7 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.8s;
     z-index: 1;
     height: 68px;
   }
@@ -964,5 +994,246 @@ input[type="range"]::-moz-range-thumb {
 
   .phone-email-container p {
     color: #fff;
+  }
+
+  .hero-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .clr-wh {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .min-bd-bt {
+    margin-top: 20px;
+  }
+
+  .foam-box {
+    padding: 20px;
+  }
+
+  .catog-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card-container {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .our-services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-navbar {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .hamburger-navbar .nav-items-ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .nav-items-ul .nav-items-li a {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .nav-items-ul .nav-items-li a:hover {
+    color: #eb3751;
+    cursor: pointer;
+  }
+
+  .card-icon {
+    gap: 8px;
+  }
+
+  .para {
+    font-size: 22px;
+  }
+
+  .img-dg {
+    padding-bottom: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .user-name {
+    font-size: 18px;
+  }
+
+  .cards-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .min-bd-bt {
+    flex-wrap: wrap;
+  }
+
+  .text-box {
+    padding-bottom: 20px;
+  }
+
+  .display-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px; */
+  }
+
+  .last-2 {
+    display: contents;
+  }
+
+  .img-dg {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cards-box {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 395px;
+  }
+
+  .price-field {
+    margin-top: 15px;
+  }
+
+  .display-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .nav-logo {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .hamburger-sec-navbar {
+    background-color: rgb(235, 55, 81, 01);
+    min-height: 47.6vh;
+    z-index: 2;
+  }
+
+  .phone-email-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .phone-email-container p {
+    font-size: 22px;
+  }
+
+  .professional-text {
+    font-size: 18px;
+  }
+
+  .header-container {
+    padding: 15px 8px;
+  }
+
+  .heading-our-services {
+    grid-template-columns: 1fr;
+  }
+
+  .comments-section {
+    display: contents;
+  }
+
+  .cmt-name {
+    margin-bottom: 20px;
+  }
+
+  .f-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .logo-img-icon {
+    padding-right: 4px;
+  }
+
+  .login-registration-text a {
+    font-size: 12px;
+  }
+
+  .sec-header {
+    padding: 10px;
+  }
+
+  .hamburger-navbar {
+    top: 112px;
+  }
+
+  option {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .user-id-name {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+  }
+
+  .nav-logo {
+    gap: 100px;
+  }
+
+  .sec-header {
+    flex-wrap: wrap;
+  }
+
+  .pro-box {
+    padding-right: 4px;
+  }
+
+  .pro-box input {
+    width: 220px;
+  }
+
+  select {
+    width: 220px;
   }
 }
