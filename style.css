@@ -897,9 +897,20 @@ input[type="range"]::-moz-range-thumb {
     background-color: #cecece;
   }
 }
+
 @media (max-width: 1440px) {
   body {
     width: 100%;
+  }
+}
+
+@media (max-width: 1218px) {
+  .nav-logo {
+    margin-left: 0;
+  }
+
+  .nav-items-ul .nav-items-li a {
+    font-size: 14px;
   }
 }
 
